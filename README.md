@@ -21,6 +21,7 @@ render('fileName', { mandatory: 'Example mandatory variable' })
 # Template syntax
 
 Double curly braces indicates that a variable is mandatory: `{{nameOfMandatoryVariable}}`
+
 Curly braces followed by dash indicates that a variable is optional: `{-nameOfOptionalVariable-}`
 
 # Render syntax
