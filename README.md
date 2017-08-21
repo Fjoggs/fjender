@@ -35,3 +35,6 @@ When you call render, it takes the html filename as its first argument, and an o
 - Jest
 - Eslint with prettier config
 - Babel
+
+# CircleCI build status
+[![CircleCI](https://circleci.com/gh/Fjoggs/fjender.svg?style=svg)](https://circleci.com/gh/Fjoggs/fjender)
