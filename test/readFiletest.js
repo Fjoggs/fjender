@@ -1,4 +1,4 @@
-import { readHtmlFile } from '../src/readFile';
+import readHtmlFile from '../src/readFile';
 
 describe('readHtmlFile', () => {
   it('should return a string on success', () => {

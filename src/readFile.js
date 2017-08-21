@@ -1,7 +1,7 @@
 import fs from 'fs';
 import log from 'fjogger';
 
-export function readHtmlFile(fileName, path = '') {
+export default function readHtmlFile(fileName, path = '') {
   if (!fileName.includes('.html')) {
     const template = fs.readFileSync(
       `./src/templates/${path}/${fileName}.html`,

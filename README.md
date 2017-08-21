@@ -1,6 +1,8 @@
 # fjender
 Template render engine for Javascript
 
+Takes a html file as input, and returns the rendered template as a continuous string.
+
 ## Usage
 
 ```js
@@ -26,7 +28,7 @@ Curly braces followed by dash indicates that a variable is optional: `{-nameOfOp
 
 # Render syntax
 
-When you call render, it takes the filename as its first argument, and an object containing all the render variables as its second
+When you call render, it takes the html filename as its first argument, and an object containing all the render variables as its second.
 
 ## Frameworks used
 - Ecmascript 6

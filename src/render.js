@@ -1,5 +1,5 @@
 import log from 'fjogger';
-import { readHtmlFile } from './readFile';
+import readHtmlFile from './readFile';
 
 export function render(fileName, vars, path) {
   let template = readHtmlFile(fileName, path);
@@ -24,36 +24,6 @@ export function render(fileName, vars, path) {
   } else {
     return removeNewLinesAndIndentation(template);
   }
-}
-
-export function renderHeader(vars) {
-  return render('header', vars);
-}
-
-export function renderFooter() {
-  return render('footer');
-}
-
-export function renderBody(vars, path = 'staticPages') {
-  const newVars = { body: render(vars.fileName, {}, path) };
-  return render('body', newVars);
-}
-
-export function renderGuide(vars) {
-  return render('guides', vars);
-}
-
-export function renderPage(vars, path = 'staticPages', isGuide = false) {
-  const header = renderHeader(vars);
-  const footer = renderFooter();
-  let body = '';
-  if (isGuide) {
-    body = renderGuide(vars);
-  } else {
-    body = renderBody(vars, path);
-  }
-  const page = header.concat(body).concat(footer);
-  return page;
 }
 
 function removeNewLinesAndIndentation(template) {
