@@ -2,7 +2,7 @@
   "name": "fjender",
   "version": "0.1",
   "description": "Template render engine package for Javascript",
-  "main": "lib/fjender.js",
+  "main": "lib/render.js",
   "repository": "https://github.com/Fjoggs/fjender",
   "author": "Vegard Fjogstad <fjoggis@gmail.com>",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
+    "fjogger": "^2.1.4",
     "jest": "^20.0.4",
     "prettier": "^1.5.2",
     "prettier-eslint": "^6.4.2"
