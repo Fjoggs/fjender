@@ -1,0 +1,29 @@
+{
+  "name": "fjender",
+  "version": "0.1",
+  "description": "Template render engine package for Javascript",
+  "main": "lib/fjender.js",
+  "repository": "https://github.com/Fjoggs/fjender",
+  "author": "Vegard Fjogstad <fjoggis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "fix": "eslint --fix .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "jest": "^20.0.4",
+    "prettier": "^1.5.2",
+    "prettier-eslint": "^6.4.2"
+  },
+  "jest": {
+    "testRegex": "./test/.*.js$"
+  }
+}
