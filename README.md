@@ -6,12 +6,11 @@ Template render engine for Javascript
 ```js
 import { render } from 'fjender'
 
-render('fileName', { templateVariables })
+render('fileName', { mandatory: 'Example mandatory variable' })
 ```
 
 ```html
 
-Example html template:
 <html>
     <head>
         <title>{{mandatory}}</title>
